@@ -24,7 +24,7 @@ def log_execution(message_text):
         f.write(f"[{timestamp}] {message_text}\n")
 
 # Configuration
-BOT_TOKEN = '8168943059:AAHb2Jj4Xv-5bmLegY8qQ2aNfhlF190p2Vc'
+BOT_TOKEN = '8168943059:AAG6g04yvhTXTHGz7hkEMlnshMiRhAxnn50'
 BOT_OWNER_IDS = [7688337621,7816069263]
 APPROVED_CHAT_IDS = []
 
