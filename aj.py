@@ -775,7 +775,7 @@ def list_files_on_vps(vps, directory="."):
 # ---------------------------
 def execute_command(vps, target_ip, target_port, duration):
     try:
-        command = f'nohup ./venom {target_ip} {target_port} {duration} 400 > /dev/null 2>&1 &'
+        command = f'nohup ./go {target_ip} {target_port} {duration} 400 > /dev/null 2>&1 &'
         client = paramiko.SSHClient()
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         client.connect(vps['ip'], username=vps['username'], password=vps['password'], timeout=10)
